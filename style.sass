@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap')
+
+body
+    background-color: #131313
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.slider
+    &_info
+        margin-top: 180px
+        width: 442px
+        margin-right: 50px
+    &_title
+        font-size: 27px
+        color: #E3B873
+        width: 253px
+        line-height: 138%
+        position: relative
+        font-family: 'Yeseva One', cursive
+    &_line
+        position: absolute
+        right: -30px
+        bottom: 20px
+        border-bottom: 1px solid #E3B873
+        height: 1px
+        width: 92px
+    &_description
+        color: #fff
+        font-size: 14px
+        width: 442px
+        line-height: 190%
+        font-family: Nunito Sans
+        margin-top: 35px
+    &_buttons
+        display: flex
+        margin-top: 80px
+        img
+            cursor: pointer
+    &_dots
+        display: flex
+        width: 80px
+        justify-content: space-around
+        margin: 0 20px
+    &_dot
+        width: 10px
+        height: 10px
+        background-color: #fff
+        border-radius: 100%
+        opacity: 0.3
+        cursor: pointer
+    &_dot.active
+        opacity: 1
+    &_params
+        display: grid
+        width: 442px
+        grid-template-columns: 1fr 1fr
+        row-gap: 35px
+        margin-top: 42px
+        &_name
+            color: #E3B873
+            font-family: Yeseva One
+            font-size: 18px
+        &_value
+            color: #fff
+            font-family: Nunito Sans
+            font-size: 13px
+            line-height: 163.68%
+            margin-top: 10px
+            width: 161px
+            height: 41px
+    &_image
+        width: 680px
+        margin-top: 110px
+        display: inline-block
+        &_titles
+            display: flex
+            width: 680px
+            justify-content: space-between
+        &_title
+            color: rgba(255, 255, 255, 0.30)
+            font-family: Yeseva One
+            font-size: 14px
+            text-transform: uppercase
+        &_title.active
+            color: #E3B873
+            border-bottom: 1px solid #E3B873
+            padding-bottom: 7px
+    &_promo
+        margin-top: 53px
